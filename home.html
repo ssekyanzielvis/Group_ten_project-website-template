@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>FOODDASH</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/custom.js"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-image: url('img/combos.jpg'), url('img/populardishes.jpg'), url('img/download.jpg'), url('img/FRIED FISH.jpg');
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      background-position: left top, right top, left bottom, right bottom;
+      background-blend-mode: multiply;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .header {
+      background-color: darkblue;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .header a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      text-decoration: underline;
+    }
+
+    .content-container {
+      padding: 20px;
+      margin-top: 70px; /* Ensure content doesn't overlap the fixed header */
+      background-color: rgba(255, 255, 255, 0.8); /* Slight background to enhance readability */
+    }
+
+    .footer {
+      background-color: darkblue;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="home.html">Home</a>
+    <a href="https://www.google.com/maps/place/Makerere+University/@0.3331581,32.5684416,17z/data=!3m1!4b1!4m6!3m5!1s0x177dbb6b44b5b7d7:0x4ff9d6ff6f0a1d3d!8m2!3d0.3331581!4d32.5684416!16s%2Fg%2F1204w0q1" class="link-button" target="_blank">Location</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="https://github.com/ssekyanzielvis/Group_ten_project-website-template">GitHub</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="menu.html">Menu</a>
+  </div>
+
+  <div class="content-container">
+    <h1>Welcome to FOODDASH</h1>
+    <p class="text">
+      Welcome to FOODDASH, your ultimate food delivery solution. Our app provides seamless meal ordering from a variety of local restaurants, with options for breakfast, lunch, and dinner. Browse menus, select your favorite dishes, and place your orders with just a few taps. Our mission is to make your dining experience as convenient and enjoyable as possible. Thank you for choosing FOODDASH. We hope you enjoy your meal!
+    </p>
+
+    <h2>Menu</h2>
+    <hr>
+    <p class="text">
+      Explore the various options available on FOODDASH. Our dropdown menus allow you to quickly navigate through different sections of the app, including browsing restaurant categories, managing your account, and accessing settings. Choose an option from the menu to get started!
+    </p>
+    <div class="control-group">
+      <div class="custom-dropdown stretch-on-mobile">
+        <a tabindex="0" href="javascript:void(0)"><span>Restaurants</span></a>
+        <div>
+          <a href="javascript:void(0)">View All Restaurants</a>
+          <a href="javascript:void(0)">Breakfast Spots</a>
+          <a href="javascript:void(0)">Lunch Favorites</a>
+          <a href="javascript:void(0)">Dinner Specials</a>
+          <a href="javascript:void(0)">Nearby Deals</a>
+        </div>
+      </div>
+      <div class="custom-dropdown stretch-on-mobile large">
+        <a tabindex="0" href="javascript:void(0)"><span>Account</span></a>
+        <div>
+          <a href="javascript:void(0)">Profile</a>
+          <a href="javascript:void(0)">Order History</a>
+          <a href="javascript:void(0)">Saved Addresses</a>
+          <a href="javascript:void(0)">Payment Methods</a>
+          <a href="javascript:void(0)">Settings</a>
+        </div>
+      </div>
+      <div class="custom-dropdown stretch-on-mobile" id="custom-dropdown">
+        <a tabindex="0" href="javascript:void(0)"><span>Offers</span></a>
+        <div>
+          <a href="javascript:void(0)">Current Promotions</a>
+          <a href="javascript:void(0)">Discount Codes</a>
+          <a href="javascript:void(0)">Referral Program</a>
+          <a href="javascript:void(0)">Loyalty Rewards</a>
+          <a href="javascript:void(0)">Seasonal Offers</a>
+        </div>
+      </div>
+      <div class="custom-dropdown stretch-on-mobile large" id="custom-dropdown-large">
+        <a tabindex="0" href="javascript:void(0)"><span>Help</span></a>
+        <div>
+          <a href="javascript:void(0)">FAQs</a>
+          <a href="javascript:void(0)">Contact Support</a>
+          <a href="javascript:void(0)">Feedback</a>
+          <a href="javascript:void(0)">Privacy Policy</a>
+          <a href="javascript:void(0)">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Delivery Options</h2>
+    <hr>
+    <p class="text">
+      Choose your preferred delivery speed for your orders on FOODDASH. Whether you prefer a quick delivery or a more leisurely pace, we have options to fit your needs. Select from the choices below to ensure your meal arrives just the way you like it.
+    </p>
+    <div class="control-group">
+      <div class="custom-radio custom-radio-left">
+        <input type="radio" name="delivery-speed" value="standard" id="delivery-standard" checked>
+        <label for="delivery-standard">Standard Delivery</label>
+      </div>
+      <div class="custom-radio custom-radio-middle">
+        <input type="radio" name="delivery-speed" value="express" id="delivery-express">
+        <label for="delivery-express">Express Delivery</label>
+      </div>
+      <div class="custom-radio custom-radio-right">
+        <input type="radio" name="delivery-speed" value="priority" id="delivery-priority">
+        <label for="delivery-priority">Priority Delivery</label>
+      </div>
+    </div>
+
+    <h2>Dialog Button and Box</h2>
+    <hr>
+    <p class="text">
+      Choose from the following options to interact with FOODDASH. Use these dialogs to access settings, support, and share your experience with others. Each dialog serves a different purpose, allowing you to customize and improve your experience on our platform.
+    </p>
+    <div class="control-group">
+      <button class="button default" id="open-dialog-button">Open Dialog</button>
+      <div id="dialog-box" title="Dialog Box" style="display: none;">
+        <p>This is a dialog box with some sample text. Use this space to display important information or options for the user to interact with. Customize the content to fit your needs.</p>
+      </div>
+      <button class="button default" id="open-modal-dialog-button">Open Modal Dialog</button>
+      <div id="modal-dialog-box" title="Modal Dialog Box" style="display: none;">
+        <p>This is a modal dialog box. It captures the user's attention and requires interaction before continuing. Use this for critical information or actions that need to be addressed immediately.</p>
+      </div>
+      <button class="button default" id="open-custom-dialog-button">Open Custom Dialog</button>
+      <div id="custom-dialog-box" title="Custom Dialog Box" style="display: none;">
+        <p>This is a custom dialog box. It allows you to present information and gather user input in a customized manner. Tailor the content and style to fit your application's needs.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#contactus">Contact Us</a>
+  </div>
+
+  <script>
+    $(function () {
+      $("#open-dialog-button").on("click", function () {
+        $("#dialog-box").dialog();
+      });
+      $("#open-modal-dialog-button").on("click", function () {
+        $("#modal-dialog-box").dialog({ modal: true });
+      });
+      $("#open-custom-dialog-button").on("click", function () {
+        $("#custom-dialog-box").dialog({ width: 400 });
+      });
+    });
+  </script>
+</body>
+
+</html>

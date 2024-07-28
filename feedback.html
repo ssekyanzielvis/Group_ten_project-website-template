@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>FOODDASH</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-container {
+      background-color: #007BFF;
+      padding: 10px 0;
+    }
+
+    .menu {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu-item {
+      margin: 0;
+    }
+
+    .menu-index {
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .menu-index:hover {
+      background-color: white;
+      color: #007BFF;
+    }
+
+    .content-container {
+      padding: 20px;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      flex: 1;
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .footer-container {
+      background-color: #007BFF;
+      padding: 20px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #4285f4;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+
+    .highlight-text {
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .add-top-margin {
+      margin-top: 20px;
+    }
+
+    .add-bottom-margin {
+      margin-bottom: 20px;
+    }
+
+    .add-top-margin-large {
+      margin-top: 40px;
+    }
+
+    .text-small {
+      font-size: 14px;
+    }
+
+    .text-italic {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-container">
+    <!-- Start Navigation Menu -->
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="home.html" class="menu-index"><i class="fas fa-home"></i> Home</a></li>
+        <li class="menu-item"><a href="location.html" class="menu-index"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+        <li class="menu-item"><a href="menu.html" class="menu-index"><i class="fas fa-utensils"></i> Menu</a></li>
+        <li class="menu-item"><a href="aboutus.html" class="menu-index"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li class="menu-item"><a href="contact.html" class="menu-index"><i class="fas fa-envelope"></i> Contact</a></li>       
+        <li class="menu-item"><a href="https://www.google.com/maps/place/Makerere+University/@0.3331581,32.5684416,17z/data=!3m1!4b1!4m6!3m5!1s0x177dbb6b44b5b7d7:0x4ff9d6ff6f0a1d3d!8m2!3d0.3331581!4d32.5684416!16s%2Fg%2F1204w0q1" class="link-button" target="_blank">Location</a></li>
+        <li class="menu-item"><a href="https://github.com/ssekyanzielvis/Group_ten_project-website-template">GitHub</a></li>
+        <li class="menu-item"><a href="feedback.html" class="menu-index"><i class="fas fa-comment-dots"></i> Feedback</a></li>
+      </ul>
+    </nav>
+    <!-- End Navigation Menu -->
+  </div>
+  
+  <div class="content-container">
+    <div class="content">
+      <!-- Start Survey -->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 id="survey">Survey</h2>
+          <hr>
+          <p class="text">
+            We value your feedback! Please take a moment to answer the following questions to help us improve our food delivery service.
+          </p>
+          <div class="custom-survey add-top-margin add-bottom-margin">
+            <span class="text">1. How satisfied are you with the variety of food options available?</span>
+            <div class="custom-radio-group-survey add-top-margin">
+              <div><input type="radio" name="food-variety" value="5" id="food-variety-0"> <label class="break-long-url" for="food-variety-0">Very Satisfied</label></div>
+              <div><input type="radio" name="food-variety" value="4" id="food-variety-1"> <label class="break-long-url" for="food-variety-1">Satisfied</label></div>
+              <div><input type="radio" name="food-variety" value="3" id="food-variety-2"> <label class="break-long-url" for="food-variety-2">Neutral</label></div>
+              <div><input type="radio" name="food-variety" value="2" id="food-variety-3"> <label class="break-long-url" for="food-variety-3">Dissatisfied</label></div>
+              <div><input type="radio" name="food-variety" value="1" id="food-variety-4"> <label class="break-long-url" for="food-variety-4">Very Dissatisfied</label></div>
+            </div>
+          </div>
+          <div class="custom-survey add-top-margin add-bottom-margin">
+            <span class="text">2. Which types of cuisine would you like to see more of? (Select all that apply)</span>
+            <div class="custom-checkbox-group-survey add-top-margin">
+              <div><input type="checkbox" name="cuisine-preference" value="italian" id="cuisine-preference-0"> <label class="break-long-url" for="cuisine-preference-0">Italian</label></div>
+              <div><input type="checkbox" name="cuisine-preference" value="chinese" id="cuisine-preference-1"> <label class="break-long-url" for="cuisine-preference-1">Chinese</label></div>
+              <div><input type="checkbox" name="cuisine-preference" value="mexican" id="cuisine-preference-2"> <label class="break-long-url" for="cuisine-preference-2">Mexican</label></div>
+              <div><input type="checkbox" name="cuisine-preference" value="indian" id="cuisine-preference-3"> <label class="break-long-url" for="cuisine-preference-3">Indian</label></div>
+              <div><input type="checkbox" name="cuisine-preference" value="thai" id="cuisine-preference-4"> <label class="break-long-url" for="cuisine-preference-4">Thai</label></div>
+            </div>
+          </div>
+          <div class="custom-survey add-top-margin add-bottom-margin">
+            <span class="text">3. Do you have any comments or suggestions for our service?</span>
+            <textarea class="custom-textbox-survey add-top-margin" placeholder="(max 500 characters)" maxlength="500"></textarea>
+          </div>
+          <div class="custom-survey add-top-margin add-bottom-margin">
+            <span class="text">4. How often do you use our app to order food?</span>
+            <div class="custom-radio-group-survey image-only add-top-margin">
+              <div><input type="radio" name="order-frequency" value="daily" id="order-frequency-0"><label for="order-frequency-0">
+                <figure><img src="https://images.unsplash.com/photo-1565303495493-22c9b3d84e49?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" alt="Daily">
+                  <div>Credit: Unsplash</div>
+                  <figcaption>Daily</figcaption>
+                </figure>
+              </label></div>
+              <div><input type="radio" name="order-frequency" value="weekly" id="order-frequency-1"><label for="order-frequency-1">
+                <figure><img src="https://images.unsplash.com/photo-1571091655789-5e3e8c4200fa?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" alt="Weekly">
+                  <div>Credit: Unsplash</div>
+                  <figcaption>Weekly</figcaption>
+                </figure>
+              </label></div>
+              <div><input type="radio" name="order-frequency" value="monthly" id="order-frequency-2"><label for="order-frequency-2">
+                <figure><img src="https://images.unsplash.com/photo-1598454441173-b9a663b1d66d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" alt="Monthly">
+                  <div>Credit: Unsplash</div>
+                  <figcaption>Monthly</figcaption>
+                </figure>
+              </label></div>
+              <div><input type="radio" name="order-frequency" value="rarely" id="order-frequency-3"><label for="order-frequency-3">
+                <figure><img src="https://images.unsplash.com/photo-1606851091778-f49c0d387049?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" alt="Rarely">
+                  <div>Credit: Unsplash</div>
+                  <figcaption>Rarely</figcaption>
+                </figure>
+              </label></div>
+            </div>
+          </div>
+          <p class="text">
+            Thank you for your feedback! Your input helps us to continually improve our service.
+          </p>
+        </div>
+      </div>
+      <!--End Survey-->
+
+    
+
+      <!--Start Credits-->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text text-small text-italic add-top-margin-large">
+            Credits: <span class="highlight-text">Group ten</span>: SSEKYANZI ELVIS / <span class="highlight-text">Group ten</span>: Tabitha Alupo, Namukwaya Irene, and Busulwa Jordan
+          </p>
+        </div>
+      </div>
+      <!--End Credits-->
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>Contact us at <a href="mailto:contact@fooddash.com">contact@fooddash.com</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
