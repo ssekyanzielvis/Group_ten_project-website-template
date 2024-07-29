@@ -1,65 +1,67 @@
-# project-website-template
-Demo: https://yenchiah.github.io/project-website-template/
+FOODDASH Website Template
+Welcome to the FOODDASH website template repository! This project is designed to create an attractive and functional template for the FOODDASH app, a food delivery solution that brings convenience and variety to your dining experience.
 
-The current version is v3.43. The last known stable version is [v3.36](https://github.com/yenchiah/project-website-template/tree/277205cb699b02f3f7ba5f9f6ea20d987582c5bf).
+Table of Contents
+Introduction
+Features
+Installation
+Usage
+Screenshots
+Contributing
+License
+Author
+Contact
+Introduction
+FOODDASH is a food delivery app that allows users to order meals from local restaurants with ease. This repository contains the template for the FOODDASH website, which includes various features to enhance the user experience.
 
-This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Examples that use this template are:
-- Personal website: [http://yenchiah.me](http://yenchiah.me) (Link to [code repository](https://github.com/yenchiah/yenchiah.github.io))
-- Project website: [http://smellpgh.org](http://smellpgh.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/smell-pittsburgh-website))
-- Project website: [https://smellmycity.org](https://smellmycity.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/smell-my-city-website))
-- Project website: [https://smoke.createlab.org](https://smoke.createlab.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/video-labeling-tool))
-- Project website: [https://periscope.io.tudelft.nl](https://periscope.io.tudelft.nl) (Link to [code repository](https://github.com/TUD-KInD/COCTEAU-TUD))
-- Lab website: [https://multix-amsterdam.github.io/](https://multix-amsterdam.github.io/) (Link to [code repository](https://github.com/MultiX-Amsterdam/multix-amsterdam.github.io))
-- Conference website: [https://www.mmm2024.org/](https://www.mmm2024.org/) (Link to [code repository](https://github.com/MultiX-Amsterdam/MMM24-website))
+Features
+Responsive Design: The website is designed to be responsive and user-friendly on all devices.
+Navigation: Easy-to-use navigation with links to Home, Location, About Us, GitHub, Feedback, and Menu.
+Interactive UI: Includes interactive elements such as dropdown menus, dialog boxes, and radio buttons for delivery options.
+Stylish Layout: Attractive layout with well-arranged elements and images to enhance user engagement.
+Fixed Header and Footer: Provides easy access to important links and information.
+Content Sections: Clearly defined sections for displaying food items, delivery options, and menu details.
+Easy Customization: The template is easy to customize to fit your specific needs.
+Installation
+To set up the project locally, follow these steps:
 
-If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
-- css/frame.css (CSS for the main frame of the website)
-- css/controls.css (CSS for control elements that do not require JavaScript)
-- css/widgets.css (CSS for widgets that require JavaScript)
-- js/widgets.js (JavaScript for widgets)
-- js/util.js (JavaScript for general utility functions)
-- js/menu.js (JavaScript for loading the menu bar)
-- js/footer.js (JavaScript for loading the footer)
+Clone the repository:
+sh
+Copy code
+git clone https://github.com/ssekyanzielvis/Group_ten_project-website-template.git
+Navigate to the project directory:
+sh
+Copy code
+cd Group_ten_project-website-template
+Usage
+Open index.html in your favorite web browser to view the website template.
 
-From version 3.0, the menu bar at the top is moved into `menu.html` for better management. Also, from version 3.37, the footer at the bottom is moved into `footer.html`. Each template page will now use jQuery to load the menu bar and the footer, as shown below:
-```html
-<script src="js/menu.js"></script>
-<script src="js/footer.js"></script>
-```
-The `menu.js` script loads `menu.html` to `menu-container`.
-```html
-<div class="menu-container"></div>
-```
-The `footer.js` script loads `footer.html` to `footer-container`.
-```html
-<div class="footer-container"></div>
-```
+Screenshots
+Home Page
 
-This template is tested and worked on:
-- macOS 12.4
-  - Chrome 103
-  - Safari 15.5
-  - Firefox 103
-  - Edge 103
-- Android 12
-  - Chrome 103
-- iOS 15.5
-  - Chrome 103
-  - Safari 15.5
-  - Firefox 102
+Menu Page
 
-# Problems and Bugs
-Here are the problems and bugs that I plan to address in the future. If you fixed them, please do not hesitate to send me a pull request, and I would be very grateful. Please also report problems and bugs in [GitHub Issues](https://github.com/yenchiah/project-website-template/issues).
+About Us Page
 
-- On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
-- On Safari, the survey question that asks users to select photos will display the photos in a weird way after clicking on the checkbox. The reason for this problem is unknown.
+Contributing
+We welcome contributions to enhance the FOODDASH website template. To contribute:
 
-# Future Plans for Feature Enhancement
-Here are several features that I plan to add in the future. If you wish to contribute, please email me to discuss the design before submitting pull requests.
+Fork the repository.
+Create a new branch (git checkout -b feature/your-feature).
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/your-feature).
+Open a Pull Request.
+License
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-- A slideshow block for showing images or videos
+Author
+SSEKYANZI ELVIS
 
-# Policy for Open Source Contribution
-I welcome and appreciate contributions in fixing bugs and enhancing features. However, please avoid submitting pull requests (PRs) that modify the template's existing design without discussing them with me. Please do not submit PRs that are not related to bug fixes or feature enhancements. Editing text in the README file is not encouraged (e.g., fixing grammar errors). PRs with unnecessary editing (e.g., adding unrelated text, changing the design of the template, modifying the README text arbitrarily) or unrelated changes (e.g., changes that are related to only their applications) will be marked as "spam" and "invalid".
+GitHub: ssekyanzielvis
+Email: abdulssekyanzi@gmail.com
+Contact
+If you have any questions or suggestions, feel free to contact us:
 
-If you are excited to contribute to the new features directly, please explain your design decisions and how your design matches this template's style in the PR. If you fix bugs, please explain which bug you fixed and how you fixed them. The explanations that you put in each PR can greatly help me determine if the changes can be merged into the master branch. PRs with no explanations will highly likely be rejected and marked as "wontfix".
+Email: support@fooddash.com
+GitHub Issues: Create an Issue
+Thank you for using FOODDASH!
