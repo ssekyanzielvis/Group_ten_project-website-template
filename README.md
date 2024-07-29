@@ -43,6 +43,8 @@ Menu Page aboutus.htm
 
 About Us aboutus.html
 
+GitHub Repository https://github.com/ssekyanzielvis/Group_ten_project-website-template
+
 Contributing
 We welcome contributions to enhance the FOODDASH website template. To contribute:
 
