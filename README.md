@@ -37,11 +37,11 @@ Usage
 Open index.html in your favorite web browser to view the website template.
 
 Screenshots
-Home Page
+Home Page home.html
 
-Menu Page
+Menu Page aboutus.htm
 
-About Us Page
+About Us aboutus.html
 
 Contributing
 We welcome contributions to enhance the FOODDASH website template. To contribute:
